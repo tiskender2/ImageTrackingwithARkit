@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		831266FF24C2C007001863A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 831266FE24C2C007001863A2 /* Assets.xcassets */; };
 		832ED51C24BEEED400BD1076 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832ED51B24BEEED400BD1076 /* AppDelegate.swift */; };
-		832ED51E24BEEED400BD1076 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832ED51D24BEEED400BD1076 /* SceneDelegate.swift */; };
 		832ED52024BEEED400BD1076 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832ED51F24BEEED400BD1076 /* ViewController.swift */; };
 		832ED52324BEEED400BD1076 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 832ED52124BEEED400BD1076 /* Main.storyboard */; };
-		832ED52524BEEED600BD1076 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 832ED52424BEEED600BD1076 /* Assets.xcassets */; };
 		832ED52824BEEED600BD1076 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 832ED52624BEEED600BD1076 /* LaunchScreen.storyboard */; };
+		832ED53224BEEF3200BD1076 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832ED53024BEEF3200BD1076 /* MainVC.swift */; };
+		832ED53324BEEF3200BD1076 /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 832ED53124BEEF3200BD1076 /* MainVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		831266FE24C2C007001863A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		832ED51824BEEED400BD1076 /* ARKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		832ED51B24BEEED400BD1076 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		832ED51D24BEEED400BD1076 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		832ED51F24BEEED400BD1076 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		832ED52224BEEED400BD1076 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		832ED52424BEEED600BD1076 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		832ED52724BEEED600BD1076 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		832ED52924BEEED600BD1076 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		832ED53024BEEF3200BD1076 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		832ED53124BEEF3200BD1076 /* MainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,24 @@
 		832ED51A24BEEED400BD1076 /* ARKitExample */ = {
 			isa = PBXGroup;
 			children = (
+				832ED52F24BEEF1900BD1076 /* MainVC */,
 				832ED51B24BEEED400BD1076 /* AppDelegate.swift */,
-				832ED51D24BEEED400BD1076 /* SceneDelegate.swift */,
 				832ED51F24BEEED400BD1076 /* ViewController.swift */,
+				831266FE24C2C007001863A2 /* Assets.xcassets */,
 				832ED52124BEEED400BD1076 /* Main.storyboard */,
-				832ED52424BEEED600BD1076 /* Assets.xcassets */,
 				832ED52624BEEED600BD1076 /* LaunchScreen.storyboard */,
 				832ED52924BEEED600BD1076 /* Info.plist */,
 			);
 			path = ARKitExample;
+			sourceTree = "<group>";
+		};
+		832ED52F24BEEF1900BD1076 /* MainVC */ = {
+			isa = PBXGroup;
+			children = (
+				832ED53024BEEF3200BD1076 /* MainVC.swift */,
+				832ED53124BEEF3200BD1076 /* MainVC.xib */,
+			);
+			path = MainVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +137,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				832ED52824BEEED600BD1076 /* LaunchScreen.storyboard in Resources */,
-				832ED52524BEEED600BD1076 /* Assets.xcassets in Resources */,
+				832ED53324BEEF3200BD1076 /* MainVC.xib in Resources */,
+				831266FF24C2C007001863A2 /* Assets.xcassets in Resources */,
 				832ED52324BEEED400BD1076 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,8 +151,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				832ED52024BEEED400BD1076 /* ViewController.swift in Sources */,
+				832ED53224BEEF3200BD1076 /* MainVC.swift in Sources */,
 				832ED51C24BEEED400BD1076 /* AppDelegate.swift in Sources */,
-				832ED51E24BEEED400BD1076 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +297,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q4E69GH98L;
 				INFOPLIST_FILE = ARKitExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +315,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q4E69GH98L;
 				INFOPLIST_FILE = ARKitExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
